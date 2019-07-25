@@ -1,0 +1,17 @@
+import { Component, OnInit, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-results',
+  templateUrl: './results.page.html',
+  styleUrls: ['./results.page.scss'],
+})
+export class ResultsPage implements OnInit {
+
+  
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  
+}

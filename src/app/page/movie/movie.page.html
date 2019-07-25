@@ -1,0 +1,398 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Movie</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-slides #slides>
+  
+      <ion-slide>
+          <ion-card>
+              <ion-card-header>
+                <ion-card-subtitle>{{movieQuestions[0]}}</ion-card-subtitle>
+              </ion-card-header>
+            
+              <ion-card-content>
+                
+  
+                <ion-list>
+                  <ion-radio-group [(ngModel)]="radioBtn0" >
+                
+                    <ion-item>
+                      <ion-label>{{movieAnswers[0]}}</ion-label>
+                      <ion-radio slot="start" value="{{movieAnswers[0]}}" ></ion-radio>
+                    </ion-item>
+                
+                    <ion-item>
+                      <ion-label>Dennis Quaid</ion-label>
+                      <ion-radio slot="start" value="Dennis Quaid" ></ion-radio>
+                    </ion-item>
+                
+                    <ion-item>
+                      <ion-label>Pete Postlethwaite</ion-label>
+                      <ion-radio slot="start" value="Pete Postlethwaite"></ion-radio>
+                    </ion-item>
+    
+                    <ion-item>
+                      <ion-label>Brian Thompson</ion-label>
+                      <ion-radio slot="start" value="Brian Thompson"></ion-radio>
+                    </ion-item>
+                    
+                  </ion-radio-group>
+                </ion-list>
+              </ion-card-content>
+  
+            </ion-card>
+      </ion-slide>
+      
+      <ion-slide>
+          <ion-card>
+              <ion-card-header>
+                  <ion-card-subtitle>{{movieQuestions[1]}}</ion-card-subtitle>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  
+    
+                  <ion-list>
+                    <ion-radio-group [(ngModel)]="radioBtn1" >
+                  
+                      <ion-item>
+                        <ion-label>Dr. Julius No</ion-label>
+                        <ion-radio slot="start" value="Dr. Julius No" ></ion-radio>
+                      </ion-item>
+                  
+                      <ion-item>
+                        <ion-label>Rosa Klebb</ion-label>
+                        <ion-radio slot="start" value="Rosa Klebb"></ion-radio>
+                      </ion-item>
+      
+                      <ion-item>
+                        <ion-label>Emilio Largo</ion-label>
+                        <ion-radio slot="start" value="Emilio Largo"></ion-radio>
+                      </ion-item>
+  
+                      <ion-item>
+                          <ion-label>{{movieAnswers[1]}}</ion-label>
+                          <ion-radio slot="start" value="{{movieAnswers[1]}}" ></ion-radio>
+                        </ion-item>
+                      
+                    </ion-radio-group>
+                  </ion-list>
+                </ion-card-content>
+            </ion-card>
+            
+      </ion-slide>
+  
+      <ion-slide>
+      <ion-card>
+          <ion-card-header>
+              <ion-card-subtitle>{{movieQuestions[2]}}</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content>
+              
+  
+              <ion-list>
+                <ion-radio-group [(ngModel)]="radioBtn2" >
+              
+                  <ion-item>
+                    <ion-label>{{movieAnswers[2]}}</ion-label>
+                    <ion-radio slot="start" value="{{movieAnswers[2]}}" ></ion-radio>
+                  </ion-item>
+              
+                  <ion-item>
+                    <ion-label>Klaus Werner von Krupt</ion-label>
+                    <ion-radio slot="start" value="Klaus Werner von Krupt" ></ion-radio>
+                  </ion-item>
+              
+                  <ion-item>
+                    <ion-label>Grigori Efimovich Rasputin</ion-label>
+                    <ion-radio slot="start" value="Grigori Efimovich Rasputin"></ion-radio>
+                  </ion-item>
+  
+                  <ion-item>
+                    <ion-label>Ilsa Haupstein</ion-label>
+                    <ion-radio slot="start" value="Ilsa Haupstein"></ion-radio>
+                  </ion-item>
+                  
+                </ion-radio-group>
+              </ion-list>
+            </ion-card-content>
+  </ion-card>
+  
+      </ion-slide>
+  
+      <ion-slide>
+          <ion-card>
+              <ion-card-header>
+                  <ion-card-subtitle>{{movieQuestions[3]}}</ion-card-subtitle>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  
+    
+                  <ion-list>
+                    <ion-radio-group [(ngModel)]="radioBtn3" >
+                  
+                      <ion-item>
+                        <ion-label>{{movieAnswers[3]}}</ion-label>
+                        <ion-radio slot="start" value="{{movieAnswers[3]}}" ></ion-radio>
+                      </ion-item>
+                  
+                      <ion-item>
+                        <ion-label>Hop</ion-label>
+                        <ion-radio slot="start" value="Hop" ></ion-radio>
+                      </ion-item>
+                  
+                      <ion-item>
+                        <ion-label>Rise of the Guardians</ion-label>
+                        <ion-radio slot="start" value="Rise of the Guardians"></ion-radio>
+                      </ion-item>
+      
+                      <ion-item>
+                        <ion-label>Alice in Wonderland</ion-label>
+                        <ion-radio slot="start" value="Alice in Wonderland"></ion-radio>
+                      </ion-item>
+                      
+                    </ion-radio-group>
+                  </ion-list>
+                </ion-card-content>
+            </ion-card>
+             
+        </ion-slide>
+  
+        <ion-slide>
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-subtitle>{{movieQuestions[4]}}</ion-card-subtitle>
+                  </ion-card-header>
+                
+                  <ion-card-content>
+                  
+                    <ion-list>
+                      <ion-radio-group [(ngModel)]="radioBtn4" >
+                    
+                        <ion-item>
+                          <ion-label>{{movieAnswers[4]}}</ion-label>
+                          <ion-radio slot="start" value="{{movieAnswers[4]}}" ></ion-radio>
+                        </ion-item>
+                    
+                        <ion-item>
+                          <ion-label>Alec Guinness</ion-label>
+                          <ion-radio slot="start" value="Alec Guinness" ></ion-radio>
+                        </ion-item>
+                    
+                        <ion-item>
+                          <ion-label>Hayden Christensen</ion-label>
+                          <ion-radio slot="start" value="Hayden Christensen"></ion-radio>
+                        </ion-item>
+        
+                        <ion-item>
+                          <ion-label>Liam Neeson</ion-label>
+                          <ion-radio slot="start" value="Liam Neeson"></ion-radio>
+                        </ion-item>
+                        
+                      </ion-radio-group>
+                    </ion-list>
+                  </ion-card-content>
+              </ion-card>
+           
+          </ion-slide>
+  
+          <ion-slide>
+              <ion-card>
+                  <ion-card-header>
+                      <ion-card-subtitle>{{movieQuestions[5]}}</ion-card-subtitle>
+                    </ion-card-header>
+                  
+                    <ion-card-content>
+                      <ion-list>
+                        <ion-radio-group [(ngModel)]="radioBtn5" >
+                      
+                          <ion-item>
+                            <ion-label>{{movieAnswers[5]}}</ion-label>
+                            <ion-radio slot="start" value="{{movieAnswers[5]}}" ></ion-radio>
+                          </ion-item>
+                      
+                          <ion-item>
+                            <ion-label>Luke, I am your father</ion-label>
+                            <ion-radio slot="start" value="Luke, I am your father" ></ion-radio>
+                          </ion-item>
+                      
+                          <ion-item>
+                            <ion-label>You're wrong. I am your father</ion-label>
+                            <ion-radio slot="start" value="You're wrong. I am your father"></ion-radio>
+                          </ion-item>
+          
+                          <ion-item>
+                            <ion-label>The truth is that I am your father</ion-label>
+                            <ion-radio slot="start" value="The truth is that I am your father"></ion-radio>
+                          </ion-item>
+                          
+                        </ion-radio-group>
+                      </ion-list>
+                    </ion-card-content>
+                </ion-card>
+                
+            </ion-slide>
+  
+            <ion-slide>
+                <ion-card>
+                    <ion-card-header>
+                        <ion-card-subtitle>{{movieQuestions[6]}}</ion-card-subtitle>
+                      </ion-card-header>
+                    
+                      <ion-card-content>
+                        
+          
+                        <ion-list>
+                          <ion-radio-group [(ngModel)]="radioBtn6" >
+                        
+                            <ion-item>
+                              <ion-label>{{movieAnswers[6]}}</ion-label>
+                              <ion-radio slot="start" value="{{movieAnswers[6]}}" ></ion-radio>
+                            </ion-item>
+                        
+                            <ion-item>
+                              <ion-label>After Episode 6</ion-label>
+                              <ion-radio slot="start" value="After Episode 6" ></ion-radio>
+                            </ion-item>
+                        
+                            <ion-item>
+                              <ion-label>Before Episode 1</ion-label>
+                              <ion-radio slot="start" value="Before Episode 1"></ion-radio>
+                            </ion-item>
+            
+                            <ion-item>
+                              <ion-label>Between Episode 4 and 5</ion-label>
+                              <ion-radio slot="start" value="Between Episode 4 and 5"></ion-radio>
+                            </ion-item>
+                            
+                          </ion-radio-group>
+                        </ion-list>
+                      </ion-card-content>
+                  </ion-card>
+                
+              </ion-slide>
+  
+              <ion-slide>
+                  <ion-card>
+                      <ion-card-header>
+                          <ion-card-subtitle>{{movieQuestions[7]}}</ion-card-subtitle>
+                        </ion-card-header>
+                      
+                        <ion-card-content>
+                          
+                          <ion-list>
+                            <ion-radio-group [(ngModel)]="radioBtn7" >
+                          
+                              <ion-item>
+                                <ion-label>{{movieAnswers[7]}}</ion-label>
+                                <ion-radio slot="start" value="{{movieAnswers[7]}}" ></ion-radio>
+                              </ion-item>
+                          
+                              <ion-item>
+                                <ion-label>Old Dogs</ion-label>
+                                <ion-radio slot="start" value="Old Dogs" ></ion-radio>
+                              </ion-item>
+                          
+                              <ion-item>
+                                <ion-label>Jumanji</ion-label>
+                                <ion-radio slot="start" value="Jumanji"></ion-radio>
+                              </ion-item>
+              
+                              <ion-item>
+                                <ion-label>Awakenings</ion-label>
+                                <ion-radio slot="start" value="Awakenings"></ion-radio>
+                              </ion-item>
+                              
+                            </ion-radio-group>
+                          </ion-list>
+                        </ion-card-content>
+                    </ion-card>
+                   
+                </ion-slide>
+  
+                <ion-slide>
+                    <ion-card>
+                        <ion-card-header>
+                            <ion-card-subtitle>{{movieQuestions[8]}}</ion-card-subtitle>
+                          </ion-card-header>
+                        
+                          <ion-card-content>
+                            
+                            <ion-list>
+                              <ion-radio-group [(ngModel)]="radioBtn8" >
+                            
+                                <ion-item>
+                                  <ion-label>{{movieAnswers[8]}}</ion-label>
+                                  <ion-radio slot="start" value="{{movieAnswers[8]}}" ></ion-radio>
+                                </ion-item>
+                            
+                                <ion-item>
+                                  <ion-label>Gnarly.</ion-label>
+                                  <ion-radio slot="start" value="Gnarly." ></ion-radio>
+                                </ion-item>
+                            
+                                <ion-item>
+                                  <ion-label>Perfect.</ion-label>
+                                  <ion-radio slot="start" value="Perfect."></ion-radio>
+                                </ion-item>
+                
+                                <ion-item>
+                                  <ion-label>Nice.</ion-label>
+                                  <ion-radio slot="start" value="Nice."></ion-radio>
+                                </ion-item>
+                                
+                              </ion-radio-group>
+                            </ion-list>
+                          </ion-card-content>
+                      </ion-card>
+                     
+                  </ion-slide>
+  
+                  <ion-slide>
+                      <ion-card>
+                          <ion-card-header>
+                              <ion-card-subtitle>{{movieQuestions[9]}}</ion-card-subtitle>
+                            </ion-card-header>
+                          
+                            <ion-card-content>
+                            
+                              <ion-list>
+                                <ion-radio-group [(ngModel)]="radioBtn9" >
+                              
+                                  <ion-item>
+                                    <ion-label>{{movieAnswers[9]}}</ion-label>
+                                    <ion-radio slot="start" value="{{movieAnswers[9]}}" ></ion-radio>
+                                  </ion-item>
+                              
+                                  <ion-item>
+                                    <ion-label>John</ion-label>
+                                    <ion-radio slot="start" value="John" ></ion-radio>
+                                  </ion-item>
+                              
+                                  <ion-item>
+                                    <ion-label>Will</ion-label>
+                                    <ion-radio slot="start" value="Will"></ion-radio>
+                                  </ion-item>
+                  
+                                  <ion-item>
+                                    <ion-label>Carl</ion-label>
+                                    <ion-radio slot="start" value="Carl"></ion-radio>
+                                  </ion-item>
+                                  
+                                </ion-radio-group>
+                              </ion-list>
+                            </ion-card-content>
+                        </ion-card> 
+                        <button ion-button color="primary" (click)="checkScore()">Check Score!</button>
+                    </ion-slide>
+  
+    </ion-slides>
+    {{score}}
+    <button class="btn" ion-button color="primary" (click)="changeSlide()">Next Question!</button>
+  </ion-content>
+  

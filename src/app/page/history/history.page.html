@@ -1,0 +1,397 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>History</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides #slides>
+
+    <ion-slide>
+        <ion-card>
+            <ion-card-header>
+              <ion-card-subtitle>{{historyQuestions[0]}}</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content>
+              
+
+              <ion-list>
+                <ion-radio-group [(ngModel)]="radioBtn0" >
+              
+                  <ion-item>
+                    <ion-label>{{historyAnswers[0]}}</ion-label>
+                    <ion-radio slot="start" value="{{historyAnswers[0]}}" ></ion-radio>
+                  </ion-item>
+              
+                  <ion-item>
+                    <ion-label>Classic</ion-label>
+                    <ion-radio slot="start" value="Classic" ></ion-radio>
+                  </ion-item>
+              
+                  <ion-item>
+                    <ion-label>Baroque</ion-label>
+                    <ion-radio slot="start" value="Baroque"></ion-radio>
+                  </ion-item>
+  
+                  <ion-item>
+                    <ion-label>Renaissance</ion-label>
+                    <ion-radio slot="start" value="Renaissance"></ion-radio>
+                  </ion-item>
+                  
+                </ion-radio-group>
+              </ion-list>
+            </ion-card-content>
+
+          </ion-card>
+    </ion-slide>
+    
+    <ion-slide>
+        <ion-card>
+            <ion-card-header>
+                <ion-card-subtitle>{{historyQuestions[1]}}</ion-card-subtitle>
+              </ion-card-header>
+            
+              <ion-card-content>
+                
+  
+                <ion-list>
+                  <ion-radio-group [(ngModel)]="radioBtn1" >
+                
+                    <ion-item>
+                      <ion-label>Robert Catesby</ion-label>
+                      <ion-radio slot="start" value="Robert Catesby" ></ion-radio>
+                    </ion-item>
+                
+                    <ion-item>
+                      <ion-label>Francis Tresham</ion-label>
+                      <ion-radio slot="start" value="Francis Tresham"></ion-radio>
+                    </ion-item>
+    
+                    <ion-item>
+                      <ion-label>Everard Digby</ion-label>
+                      <ion-radio slot="start" value="Everard Digby"></ion-radio>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label>{{historyAnswers[1]}}</ion-label>
+                        <ion-radio slot="start" value="{{historyAnswers[1]}}" ></ion-radio>
+                      </ion-item>
+                    
+                  </ion-radio-group>
+                </ion-list>
+              </ion-card-content>
+          </ion-card>
+          
+    </ion-slide>
+
+    <ion-slide>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-subtitle>{{historyQuestions[2]}}</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            
+
+            <ion-list>
+              <ion-radio-group [(ngModel)]="radioBtn2" >
+            
+                <ion-item>
+                  <ion-label>{{historyAnswers[2]}}</ion-label>
+                  <ion-radio slot="start" value="{{historyAnswers[2]}}" ></ion-radio>
+                </ion-item>
+            
+                <ion-item>
+                  <ion-label>August 21</ion-label>
+                  <ion-radio slot="start" value="August 21" ></ion-radio>
+                </ion-item>
+            
+                <ion-item>
+                  <ion-label>December 26</ion-label>
+                  <ion-radio slot="start" value="December 26"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label>December 24</ion-label>
+                  <ion-radio slot="start" value="December 24"></ion-radio>
+                </ion-item>
+                
+              </ion-radio-group>
+            </ion-list>
+          </ion-card-content>
+</ion-card>
+
+    </ion-slide>
+
+    <ion-slide>
+        <ion-card>
+            <ion-card-header>
+                <ion-card-subtitle>{{historyQuestions[3]}}</ion-card-subtitle>
+              </ion-card-header>
+            
+              <ion-card-content>
+                
+  
+                <ion-list>
+                  <ion-radio-group [(ngModel)]="radioBtn3" >
+                
+                    <ion-item>
+                      <ion-label>{{historyAnswers[3]}}</ion-label>
+                      <ion-radio slot="start" value="{{historyAnswers[3]}}" ></ion-radio>
+                    </ion-item>
+                
+                    <ion-item>
+                      <ion-label>July 1st, 1763</ion-label>
+                      <ion-radio slot="start" value="July 1st, 1763" ></ion-radio>
+                    </ion-item>
+                
+                    <ion-item>
+                      <ion-label>July 1st, 1832</ion-label>
+                      <ion-radio slot="start" value="July 1st, 1832"></ion-radio>
+                    </ion-item>
+    
+                    <ion-item>
+                      <ion-label>July 1st, 1902</ion-label>
+                      <ion-radio slot="start" value="July 1st, 1902"></ion-radio>
+                    </ion-item>
+                    
+                  </ion-radio-group>
+                </ion-list>
+              </ion-card-content>
+          </ion-card>
+           
+      </ion-slide>
+
+      <ion-slide>
+          <ion-card>
+              <ion-card-header>
+                  <ion-card-subtitle>{{historyQuestions[4]}}</ion-card-subtitle>
+                </ion-card-header>
+              
+                <ion-card-content>
+                
+                  <ion-list>
+                    <ion-radio-group [(ngModel)]="radioBtn4" >
+                  
+                      <ion-item>
+                        <ion-label>{{historyAnswers[4]}}</ion-label>
+                        <ion-radio slot="start" value="{{historyAnswers[4]}}" ></ion-radio>
+                      </ion-item>
+                  
+                      <ion-item>
+                        <ion-label>42 BCE</ion-label>
+                        <ion-radio slot="start" value="42 BCE" ></ion-radio>
+                      </ion-item>
+                  
+                      <ion-item>
+                        <ion-label>264 BCE</ion-label>
+                        <ion-radio slot="start" value="264 BCE"></ion-radio>
+                      </ion-item>
+      
+                      <ion-item>
+                        <ion-label>102 CE</ion-label>
+                        <ion-radio slot="start" value="102 CE"></ion-radio>
+                      </ion-item>
+                      
+                    </ion-radio-group>
+                  </ion-list>
+                </ion-card-content>
+            </ion-card>
+         
+        </ion-slide>
+
+        <ion-slide>
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-subtitle>{{historyQuestions[5]}}</ion-card-subtitle>
+                  </ion-card-header>
+                
+                  <ion-card-content>
+                    <ion-list>
+                      <ion-radio-group [(ngModel)]="radioBtn5" >
+                    
+                        <ion-item>
+                          <ion-label>{{historyAnswers[5]}}</ion-label>
+                          <ion-radio slot="start" value="{{historyAnswers[5]}}" ></ion-radio>
+                        </ion-item>
+                    
+                        <ion-item>
+                          <ion-label>October 9, 1997</ion-label>
+                          <ion-radio slot="start" value="October 9, 1997" ></ion-radio>
+                        </ion-item>
+                    
+                        <ion-item>
+                          <ion-label>December 12, 1989</ion-label>
+                          <ion-radio slot="start" value="December 12, 1989"></ion-radio>
+                        </ion-item>
+        
+                        <ion-item>
+                          <ion-label>Feburary 7th, 2000</ion-label>
+                          <ion-radio slot="start" value="Feburary 7th, 2000"></ion-radio>
+                        </ion-item>
+                        
+                      </ion-radio-group>
+                    </ion-list>
+                  </ion-card-content>
+              </ion-card>
+              
+          </ion-slide>
+
+          <ion-slide>
+              <ion-card>
+                  <ion-card-header>
+                      <ion-card-subtitle>{{historyQuestions[6]}}</ion-card-subtitle>
+                    </ion-card-header>
+                  
+                    <ion-card-content>
+                      
+        
+                      <ion-list>
+                        <ion-radio-group [(ngModel)]="radioBtn6" >
+                      
+                          <ion-item>
+                            <ion-label>{{historyAnswers[6]}}</ion-label>
+                            <ion-radio slot="start" value="{{historyAnswers[6]}}" ></ion-radio>
+                          </ion-item>
+                      
+                          <ion-item>
+                            <ion-label>German Democratic Republic</ion-label>
+                            <ion-radio slot="start" value="German Democratic Republic" ></ion-radio>
+                          </ion-item>
+                      
+                          <ion-item>
+                            <ion-label>Federal Republic of Germany</ion-label>
+                            <ion-radio slot="start" value="Federal Republic of Germany"></ion-radio>
+                          </ion-item>
+          
+                          <ion-item>
+                            <ion-label>Oesterreich</ion-label>
+                            <ion-radio slot="start" value="Oesterreich"></ion-radio>
+                          </ion-item>
+                          
+                        </ion-radio-group>
+                      </ion-list>
+                    </ion-card-content>
+                </ion-card>
+              
+            </ion-slide>
+
+            <ion-slide>
+                <ion-card>
+                    <ion-card-header>
+                        <ion-card-subtitle>{{historyQuestions[7]}}</ion-card-subtitle>
+                      </ion-card-header>
+                    
+                      <ion-card-content>
+                        
+                        <ion-list>
+                          <ion-radio-group [(ngModel)]="radioBtn7" >
+                        
+                            <ion-item>
+                              <ion-label>{{historyAnswers[7]}}</ion-label>
+                              <ion-radio slot="start" value="{{historyAnswers[7]}}" ></ion-radio>
+                            </ion-item>
+                        
+                            <ion-item>
+                              <ion-label>1435</ion-label>
+                              <ion-radio slot="start" value="1435" ></ion-radio>
+                            </ion-item>
+                        
+                            <ion-item>
+                              <ion-label>1454</ion-label>
+                              <ion-radio slot="start" value="1454"></ion-radio>
+                            </ion-item>
+            
+                            <ion-item>
+                              <ion-label>1440</ion-label>
+                              <ion-radio slot="start" value="1440"></ion-radio>
+                            </ion-item>
+                            
+                          </ion-radio-group>
+                        </ion-list>
+                      </ion-card-content>
+                  </ion-card>
+                 
+              </ion-slide>
+
+              <ion-slide>
+                  <ion-card>
+                      <ion-card-header>
+                          <ion-card-subtitle>{{historyQuestions[8]}}</ion-card-subtitle>
+                        </ion-card-header>
+                      
+                        <ion-card-content>
+                          
+                          <ion-list>
+                            <ion-radio-group [(ngModel)]="radioBtn8" >
+                          
+                              <ion-item>
+                                <ion-label>{{historyAnswers[8]}}</ion-label>
+                                <ion-radio slot="start" value="{{historyAnswers[8]}}" ></ion-radio>
+                              </ion-item>
+                          
+                              <ion-item>
+                                <ion-label>Democrat</ion-label>
+                                <ion-radio slot="start" value="Democrat" ></ion-radio>
+                              </ion-item>
+                          
+                              <ion-item>
+                                <ion-label>Independent</ion-label>
+                                <ion-radio slot="start" value="Independent"></ion-radio>
+                              </ion-item>
+              
+                              <ion-item>
+                                <ion-label>Whig</ion-label>
+                                <ion-radio slot="start" value="Whig"></ion-radio>
+                              </ion-item>
+                              
+                            </ion-radio-group>
+                          </ion-list>
+                        </ion-card-content>
+                    </ion-card>
+                   
+                </ion-slide>
+
+                <ion-slide>
+                    <ion-card>
+                        <ion-card-header>
+                            <ion-card-subtitle>{{historyQuestions[9]}}</ion-card-subtitle>
+                          </ion-card-header>
+                        
+                          <ion-card-content>
+                          
+                            <ion-list>
+                              <ion-radio-group [(ngModel)]="radioBtn9" >
+                            
+                                <ion-item>
+                                  <ion-label>{{historyAnswers[9]}}</ion-label>
+                                  <ion-radio slot="start" value="{{historyAnswers[9]}}" ></ion-radio>
+                                </ion-item>
+                            
+                                <ion-item>
+                                  <ion-label>Hicksville, New York</ion-label>
+                                  <ion-radio slot="start" value="Hicksville, New York" ></ion-radio>
+                                </ion-item>
+                            
+                                <ion-item>
+                                  <ion-label>Jacksonville, Florida</ion-label>
+                                  <ion-radio slot="start" value="Jacksonville, Florida"></ion-radio>
+                                </ion-item>
+                
+                                <ion-item>
+                                  <ion-label>Conway, Arkansas</ion-label>
+                                  <ion-radio slot="start" value="Conway, Arkansas"></ion-radio>
+                                </ion-item>
+                                
+                              </ion-radio-group>
+                            </ion-list>
+                          </ion-card-content>
+                      </ion-card> 
+                      <button ion-button color="primary" (click)="checkScore()">Check Score!</button>
+                  </ion-slide>
+
+  </ion-slides>
+  {{score}}
+  <button class="btn" ion-button color="primary" (click)="changeSlide()">Next Question!</button>
+</ion-content>
