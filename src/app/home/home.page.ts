@@ -11,7 +11,7 @@ export class HomePage {
   constructor(private router:Router) {}
 
   nav(){
-    this.router.navigateByUrl('/tabs');
+    this.router.navigateByUrl('tabs/default');
 
   }
 

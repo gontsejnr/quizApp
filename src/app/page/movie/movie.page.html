@@ -5,6 +5,14 @@
   </ion-header>
   
   <ion-content>
+
+      <ion-card>
+          <img src="https://images.pexels.com/photos/2335050/pexels-photo-2335050.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+          <ion-card-header>
+          
+          </ion-card-header>
+        </ion-card>
+
     <ion-slides #slides>
   
       <ion-slide>
@@ -15,28 +23,27 @@
             
               <ion-card-content>
                 
-  
                 <ion-list>
                   <ion-radio-group [(ngModel)]="radioBtn0" >
                 
                     <ion-item>
                       <ion-label>{{movieAnswers[0]}}</ion-label>
-                      <ion-radio slot="start" value="{{movieAnswers[0]}}" ></ion-radio>
+                      <ion-radio   (click)="rightAnswer()" value="{{movieAnswers[0]}}" ></ion-radio>
                     </ion-item>
                 
                     <ion-item>
                       <ion-label>Dennis Quaid</ion-label>
-                      <ion-radio slot="start" value="Dennis Quaid" ></ion-radio>
+                      <ion-radio   (click)="wrongAnswer()" value="Dennis Quaid" ></ion-radio>
                     </ion-item>
                 
                     <ion-item>
                       <ion-label>Pete Postlethwaite</ion-label>
-                      <ion-radio slot="start" value="Pete Postlethwaite"></ion-radio>
+                      <ion-radio   (click)="wrongAnswer1()" value="Pete Postlethwaite"></ion-radio>
                     </ion-item>
     
                     <ion-item>
                       <ion-label>Brian Thompson</ion-label>
-                      <ion-radio slot="start" value="Brian Thompson"></ion-radio>
+                      <ion-radio   (click)="wrongAnswer2()" value="Brian Thompson"></ion-radio>
                     </ion-item>
                     
                   </ion-radio-group>
@@ -53,29 +60,27 @@
                 </ion-card-header>
               
                 <ion-card-content>
-                  
-    
                   <ion-list>
                     <ion-radio-group [(ngModel)]="radioBtn1" >
                   
                       <ion-item>
                         <ion-label>Dr. Julius No</ion-label>
-                        <ion-radio slot="start" value="Dr. Julius No" ></ion-radio>
+                        <ion-radio   (click)="wrongAnswer()" value="Dr. Julius No" ></ion-radio>
                       </ion-item>
                   
                       <ion-item>
                         <ion-label>Rosa Klebb</ion-label>
-                        <ion-radio slot="start" value="Rosa Klebb"></ion-radio>
+                        <ion-radio   (click)="wrongAnswer1()" value="Rosa Klebb"></ion-radio>
                       </ion-item>
       
                       <ion-item>
                         <ion-label>Emilio Largo</ion-label>
-                        <ion-radio slot="start" value="Emilio Largo"></ion-radio>
+                        <ion-radio   (click)="wrongAnswer2()" value="Emilio Largo"></ion-radio>
                       </ion-item>
   
                       <ion-item>
                           <ion-label>{{movieAnswers[1]}}</ion-label>
-                          <ion-radio slot="start" value="{{movieAnswers[1]}}" ></ion-radio>
+                          <ion-radio   (click)="rightAnswer()" value="{{movieAnswers[1]}}" ></ion-radio>
                         </ion-item>
                       
                     </ion-radio-group>
@@ -99,22 +104,22 @@
               
                   <ion-item>
                     <ion-label>{{movieAnswers[2]}}</ion-label>
-                    <ion-radio slot="start" value="{{movieAnswers[2]}}" ></ion-radio>
+                    <ion-radio   (click)="rightAnswer()" value="{{movieAnswers[2]}}" ></ion-radio>
                   </ion-item>
               
                   <ion-item>
                     <ion-label>Klaus Werner von Krupt</ion-label>
-                    <ion-radio slot="start" value="Klaus Werner von Krupt" ></ion-radio>
+                    <ion-radio   (click)="wrongAnswer()" value="Klaus Werner von Krupt" ></ion-radio>
                   </ion-item>
               
                   <ion-item>
                     <ion-label>Grigori Efimovich Rasputin</ion-label>
-                    <ion-radio slot="start" value="Grigori Efimovich Rasputin"></ion-radio>
+                    <ion-radio   (click)="wrongAnswer1()" value="Grigori Efimovich Rasputin"></ion-radio>
                   </ion-item>
   
                   <ion-item>
                     <ion-label>Ilsa Haupstein</ion-label>
-                    <ion-radio slot="start" value="Ilsa Haupstein"></ion-radio>
+                    <ion-radio   (click)="wrongAnswer2()" value="Ilsa Haupstein"></ion-radio>
                   </ion-item>
                   
                 </ion-radio-group>
@@ -138,22 +143,22 @@
                   
                       <ion-item>
                         <ion-label>{{movieAnswers[3]}}</ion-label>
-                        <ion-radio slot="start" value="{{movieAnswers[3]}}" ></ion-radio>
+                        <ion-radio   (click)="rightAnswer()" value="{{movieAnswers[3]}}" ></ion-radio>
                       </ion-item>
                   
                       <ion-item>
                         <ion-label>Hop</ion-label>
-                        <ion-radio slot="start" value="Hop" ></ion-radio>
+                        <ion-radio   (click)="wrongAnswer()" value="Hop" ></ion-radio>
                       </ion-item>
                   
                       <ion-item>
                         <ion-label>Rise of the Guardians</ion-label>
-                        <ion-radio slot="start" value="Rise of the Guardians"></ion-radio>
+                        <ion-radio   (click)="wrongAnswer1()" value="Rise of the Guardians"></ion-radio>
                       </ion-item>
       
                       <ion-item>
                         <ion-label>Alice in Wonderland</ion-label>
-                        <ion-radio slot="start" value="Alice in Wonderland"></ion-radio>
+                        <ion-radio   (click)="wrongAnswer2()" value="Alice in Wonderland"></ion-radio>
                       </ion-item>
                       
                     </ion-radio-group>
@@ -176,22 +181,22 @@
                     
                         <ion-item>
                           <ion-label>{{movieAnswers[4]}}</ion-label>
-                          <ion-radio slot="start" value="{{movieAnswers[4]}}" ></ion-radio>
+                          <ion-radio   (click)="rightAnswer()" value="{{movieAnswers[4]}}" ></ion-radio>
                         </ion-item>
                     
                         <ion-item>
                           <ion-label>Alec Guinness</ion-label>
-                          <ion-radio slot="start" value="Alec Guinness" ></ion-radio>
+                          <ion-radio   (click)="wrongAnswer()" value="Alec Guinness" ></ion-radio>
                         </ion-item>
                     
                         <ion-item>
                           <ion-label>Hayden Christensen</ion-label>
-                          <ion-radio slot="start" value="Hayden Christensen"></ion-radio>
+                          <ion-radio   (click)="wrongAnswer()" value="Hayden Christensen"></ion-radio>
                         </ion-item>
         
                         <ion-item>
                           <ion-label>Liam Neeson</ion-label>
-                          <ion-radio slot="start" value="Liam Neeson"></ion-radio>
+                          <ion-radio   (click)="wrongAnswer2()" value="Liam Neeson"></ion-radio>
                         </ion-item>
                         
                       </ion-radio-group>
@@ -213,22 +218,22 @@
                       
                           <ion-item>
                             <ion-label>{{movieAnswers[5]}}</ion-label>
-                            <ion-radio slot="start" value="{{movieAnswers[5]}}" ></ion-radio>
+                            <ion-radio   (click)="rightAnswer()" value="{{movieAnswers[5]}}" ></ion-radio>
                           </ion-item>
                       
                           <ion-item>
                             <ion-label>Luke, I am your father</ion-label>
-                            <ion-radio slot="start" value="Luke, I am your father" ></ion-radio>
+                            <ion-radio   (click)="wrongAnswer()" value="Luke, I am your father" ></ion-radio>
                           </ion-item>
                       
                           <ion-item>
                             <ion-label>You're wrong. I am your father</ion-label>
-                            <ion-radio slot="start" value="You're wrong. I am your father"></ion-radio>
+                            <ion-radio   (click)="wrongAnswer1()" value="You're wrong. I am your father"></ion-radio>
                           </ion-item>
           
                           <ion-item>
                             <ion-label>The truth is that I am your father</ion-label>
-                            <ion-radio slot="start" value="The truth is that I am your father"></ion-radio>
+                            <ion-radio   (click)="wrongAnswer2()" value="The truth is that I am your father"></ion-radio>
                           </ion-item>
                           
                         </ion-radio-group>
@@ -252,22 +257,22 @@
                         
                             <ion-item>
                               <ion-label>{{movieAnswers[6]}}</ion-label>
-                              <ion-radio slot="start" value="{{movieAnswers[6]}}" ></ion-radio>
+                              <ion-radio   (click)="rightAnswer()" value="{{movieAnswers[6]}}" ></ion-radio>
                             </ion-item>
                         
                             <ion-item>
                               <ion-label>After Episode 6</ion-label>
-                              <ion-radio slot="start" value="After Episode 6" ></ion-radio>
+                              <ion-radio   (click)="wrongAnswer()" value="After Episode 6" ></ion-radio>
                             </ion-item>
                         
                             <ion-item>
                               <ion-label>Before Episode 1</ion-label>
-                              <ion-radio slot="start" value="Before Episode 1"></ion-radio>
+                              <ion-radio   (click)="wrongAnswer1()" value="Before Episode 1"></ion-radio>
                             </ion-item>
             
                             <ion-item>
                               <ion-label>Between Episode 4 and 5</ion-label>
-                              <ion-radio slot="start" value="Between Episode 4 and 5"></ion-radio>
+                              <ion-radio   (click)="wrongAnswer2()" value="Between Episode 4 and 5"></ion-radio>
                             </ion-item>
                             
                           </ion-radio-group>
@@ -290,22 +295,22 @@
                           
                               <ion-item>
                                 <ion-label>{{movieAnswers[7]}}</ion-label>
-                                <ion-radio slot="start" value="{{movieAnswers[7]}}" ></ion-radio>
+                                <ion-radio   (click)="rightAnswer()" value="{{movieAnswers[7]}}" ></ion-radio>
                               </ion-item>
                           
                               <ion-item>
                                 <ion-label>Old Dogs</ion-label>
-                                <ion-radio slot="start" value="Old Dogs" ></ion-radio>
+                                <ion-radio   (click)="wrongAnswer()" value="Old Dogs" ></ion-radio>
                               </ion-item>
                           
                               <ion-item>
                                 <ion-label>Jumanji</ion-label>
-                                <ion-radio slot="start" value="Jumanji"></ion-radio>
+                                <ion-radio   (click)="wrongAnswer1()" value="Jumanji"></ion-radio>
                               </ion-item>
               
                               <ion-item>
                                 <ion-label>Awakenings</ion-label>
-                                <ion-radio slot="start" value="Awakenings"></ion-radio>
+                                <ion-radio   (click)="wrongAnswer2()" value="Awakenings"></ion-radio>
                               </ion-item>
                               
                             </ion-radio-group>
@@ -328,22 +333,22 @@
                             
                                 <ion-item>
                                   <ion-label>{{movieAnswers[8]}}</ion-label>
-                                  <ion-radio slot="start" value="{{movieAnswers[8]}}" ></ion-radio>
+                                  <ion-radio   (click)="rightAnswer()" value="{{movieAnswers[8]}}" ></ion-radio>
                                 </ion-item>
                             
                                 <ion-item>
                                   <ion-label>Gnarly.</ion-label>
-                                  <ion-radio slot="start" value="Gnarly." ></ion-radio>
+                                  <ion-radio   (click)="wrongAnswer()" value="Gnarly." ></ion-radio>
                                 </ion-item>
                             
                                 <ion-item>
                                   <ion-label>Perfect.</ion-label>
-                                  <ion-radio slot="start" value="Perfect."></ion-radio>
+                                  <ion-radio   (click)="wrongAnswer1()" value="Perfect."></ion-radio>
                                 </ion-item>
                 
                                 <ion-item>
                                   <ion-label>Nice.</ion-label>
-                                  <ion-radio slot="start" value="Nice."></ion-radio>
+                                  <ion-radio   (click)="wrongAnswer2()" value="Nice."></ion-radio>
                                 </ion-item>
                                 
                               </ion-radio-group>
@@ -366,33 +371,37 @@
                               
                                   <ion-item>
                                     <ion-label>{{movieAnswers[9]}}</ion-label>
-                                    <ion-radio slot="start" value="{{movieAnswers[9]}}" ></ion-radio>
+                                    <ion-radio   (click)="rightAnswer()" value="{{movieAnswers[9]}}" ></ion-radio>
                                   </ion-item>
                               
                                   <ion-item>
                                     <ion-label>John</ion-label>
-                                    <ion-radio slot="start" value="John" ></ion-radio>
+                                    <ion-radio   (click)="wrongAnswer()" value="John" ></ion-radio>
                                   </ion-item>
                               
                                   <ion-item>
                                     <ion-label>Will</ion-label>
-                                    <ion-radio slot="start" value="Will"></ion-radio>
+                                    <ion-radio   (click)="wrongAnswer1()" value="Will"></ion-radio>
                                   </ion-item>
                   
                                   <ion-item>
                                     <ion-label>Carl</ion-label>
-                                    <ion-radio slot="start" value="Carl"></ion-radio>
+                                    <ion-radio   (click)="wrongAnswer2()" value="Carl"></ion-radio>
                                   </ion-item>
                                   
                                 </ion-radio-group>
                               </ion-list>
                             </ion-card-content>
                         </ion-card> 
-                        <button ion-button color="primary" (click)="checkScore()">Check Score!</button>
+                        <!-- <button ion-button color="primary" (click)="checkScore()">Check Score!</button> -->
                     </ion-slide>
-  
+                    <ion-slide>
+                      <button ion-button color="primary" (click)="toResults()">Check Score!</button>
+                      <br>
+                      {{score}}
+        </ion-slide>
     </ion-slides>
-    {{score}}
-    <button class="btn" ion-button color="primary" (click)="changeSlide()">Next Question!</button>
+   
+    <!-- <button class="btn" ion-button color="primary" (click)="changeSlide()">Next Question!</button> -->
   </ion-content>
   

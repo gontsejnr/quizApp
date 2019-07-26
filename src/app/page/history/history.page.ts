@@ -21,6 +21,8 @@ export class HistoryPage implements OnInit {
   //score results to be calculated
   score : number = 0;
 
+  hasAnswered: boolean = false;  
+
   radioBtn0;
   radioBtn1;
   radioBtn2;
@@ -37,51 +39,57 @@ export class HistoryPage implements OnInit {
   ngOnInit() {
   }
 
-  changeSlide(){
+  nextSlide(){
     this.slides.slideNext();
-    
 }
+
+rightAnswer(){
+  console.log(this.score += 1)
+  if(this.hasAnswered = true){
+    this.nextSlide();
+  }
+}
+wrongAnswer(){
+  console.log(this.score = this.score)
+  if(this.hasAnswered ==true){
+    this.nextSlide();
+  }
+}
+wrongAnswer1(){
+  console.log(this.score = this.score)
+  if(this.hasAnswered ==true){
+    this.nextSlide();
+  }
+}
+wrongAnswer2(){
+  console.log(this.score = this.score)
+  if(this.hasAnswered ==true){
+    this.nextSlide();
+  }
+}
+
 
 toResults(){
 
   this.router.navigateByUrl('tabs/results');
-  // this.score = 0;
-  // this.router.navigateByUrl('tabs/results');
- 
+   
 }
-checkScore(){
 
-  if (this.historyAnswers[0] == this.radioBtn0){
-    this.score = this.score +=1;
-  }
-  if (this.historyAnswers[1] == this.radioBtn1){
-    this.score = this.score +=1;
-  }
-  if (this.historyAnswers[2] == this.radioBtn2){
-    this.score = this.score +=1;
-  }
-  if (this.historyAnswers[3] == this.radioBtn3){
-    this.score = this.score +=1;
-  }
-  if (this.historyAnswers[4] == this.radioBtn4){
-    this.score = this.score +=1;
-  }
-  if (this.historyAnswers[5] == this.radioBtn5){
-    this.score = this.score +=1;
-  }
-  if (this.historyAnswers[6] == this.radioBtn6){
-    this.score = this.score +=1;
-  }
-  if (this.historyAnswers[7] == this.radioBtn7){
-    this.score = this.score +=1;
-  }
-  if (this.historyAnswers[8] == this.radioBtn8){
-    this.score = this.score +=1;
-  }
-  if (this.historyAnswers[9] == this.radioBtn9){
-    this.score = this.score +=1;
-  }
-  return this.score;
+restart() {
+  this.score = 0;
+  this.slides.lockSwipes(false);
+  this.slides.slideTo(0, 1000);
+  this.slides.lockSwipes(false);
+}
+
+reset() {
+  this.score = 0;
+  this.router.navigateByUrl('home');
+}
+
+EndSlide() {
+  console.log("passed to results");
+  this.router.navigate(['tabs/results'], { queryParams:{score: this.score}});
 }
 
 }

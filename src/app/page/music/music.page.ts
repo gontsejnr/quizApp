@@ -19,6 +19,8 @@ export class MusicPage implements OnInit {
   //score results to be calculated
   score : number = 0;
 
+  hasAnswered: boolean = false; 
+
   radioBtn0;
   radioBtn1;
   radioBtn2;
@@ -34,49 +36,41 @@ export class MusicPage implements OnInit {
 
   ngOnInit() {
   }
- changeSlide(){
+  nextSlide(){
     this.slides.slideNext();
-    
 }
+
+rightAnswer(){
+  console.log(this.score += 1)
+  if(this.hasAnswered = true){
+    this.nextSlide();
+  }
+}
+wrongAnswer(){
+  console.log(this.score = this.score)
+  if(this.hasAnswered ==true){
+    this.nextSlide();
+  }
+}
+wrongAnswer1(){
+  console.log(this.score = this.score)
+  if(this.hasAnswered ==true){
+    this.nextSlide();
+  }
+}
+wrongAnswer2(){
+  console.log(this.score = this.score)
+  if(this.hasAnswered ==true){
+    this.nextSlide();
+  }
+}
+
 
 toResults(){
 
   this.router.navigateByUrl('tabs/results');
   // this.score = 0;
   // this.router.navigateByUrl('tabs/results');
+ 
 }
-checkScore(){
-  if (this.musicAnswers[0] == this.radioBtn0){
-    this.score = this.score +=1;
-  }
-  if (this.musicAnswers[1] == this.radioBtn1){
-    this.score = this.score +=1;
-  }
-  if (this.musicAnswers[2] == this.radioBtn2){
-    this.score = this.score +=1;
-  }
-  if (this.musicAnswers[3] == this.radioBtn3){
-    this.score = this.score +=1;
-  }
-  if (this.musicAnswers[4] == this.radioBtn4){
-    this.score = this.score +=1;
-  }
-  if (this.musicAnswers[5] == this.radioBtn5){
-    this.score = this.score +=1;
-  }
-  if (this.musicAnswers[6] == this.radioBtn6){
-    this.score = this.score +=1;
-  }
-  if (this.musicAnswers[7] == this.radioBtn7){
-    this.score = this.score +=1;
-  }
-  if (this.musicAnswers[8] == this.radioBtn8){
-    this.score = this.score +=1;
-  }
-  if (this.musicAnswers[9] == this.radioBtn9){
-    this.score = this.score +=1;
-  }
-  return this.score;
-}
-
 }
