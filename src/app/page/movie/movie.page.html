@@ -18,7 +18,7 @@
       <ion-slide>
           <ion-card>
               <ion-card-header>
-                <ion-card-subtitle>{{movieQuestions[0]}}</ion-card-subtitle>
+                <ion-card-subtitle color="primary">{{movieQuestions[0]}}</ion-card-subtitle>
               </ion-card-header>
             
               <ion-card-content>
@@ -56,7 +56,7 @@
       <ion-slide>
           <ion-card>
               <ion-card-header>
-                  <ion-card-subtitle>{{movieQuestions[1]}}</ion-card-subtitle>
+                  <ion-card-subtitle color="primary">{{movieQuestions[1]}}</ion-card-subtitle>
                 </ion-card-header>
               
                 <ion-card-content>
@@ -93,12 +93,10 @@
       <ion-slide>
       <ion-card>
           <ion-card-header>
-              <ion-card-subtitle>{{movieQuestions[2]}}</ion-card-subtitle>
+              <ion-card-subtitle color="primary">{{movieQuestions[2]}}</ion-card-subtitle>
             </ion-card-header>
           
             <ion-card-content>
-              
-  
               <ion-list>
                 <ion-radio-group [(ngModel)]="radioBtn2" >
               
@@ -132,12 +130,10 @@
       <ion-slide>
           <ion-card>
               <ion-card-header>
-                  <ion-card-subtitle>{{movieQuestions[3]}}</ion-card-subtitle>
+                  <ion-card-subtitle color="primary">{{movieQuestions[3]}}</ion-card-subtitle>
                 </ion-card-header>
               
                 <ion-card-content>
-                  
-    
                   <ion-list>
                     <ion-radio-group [(ngModel)]="radioBtn3" >
                   
@@ -171,7 +167,7 @@
         <ion-slide>
             <ion-card>
                 <ion-card-header>
-                    <ion-card-subtitle>{{movieQuestions[4]}}</ion-card-subtitle>
+                    <ion-card-subtitle color="primary">{{movieQuestions[4]}}</ion-card-subtitle>
                   </ion-card-header>
                 
                   <ion-card-content>
@@ -209,7 +205,7 @@
           <ion-slide>
               <ion-card>
                   <ion-card-header>
-                      <ion-card-subtitle>{{movieQuestions[5]}}</ion-card-subtitle>
+                      <ion-card-subtitle color="primary">{{movieQuestions[5]}}</ion-card-subtitle>
                     </ion-card-header>
                   
                     <ion-card-content>
@@ -246,7 +242,7 @@
             <ion-slide>
                 <ion-card>
                     <ion-card-header>
-                        <ion-card-subtitle>{{movieQuestions[6]}}</ion-card-subtitle>
+                        <ion-card-subtitle color="primary">{{movieQuestions[6]}}</ion-card-subtitle>
                       </ion-card-header>
                     
                       <ion-card-content>
@@ -285,7 +281,7 @@
               <ion-slide>
                   <ion-card>
                       <ion-card-header>
-                          <ion-card-subtitle>{{movieQuestions[7]}}</ion-card-subtitle>
+                          <ion-card-subtitle color="primary">{{movieQuestions[7]}}</ion-card-subtitle>
                         </ion-card-header>
                       
                         <ion-card-content>
@@ -323,7 +319,7 @@
                 <ion-slide>
                     <ion-card>
                         <ion-card-header>
-                            <ion-card-subtitle>{{movieQuestions[8]}}</ion-card-subtitle>
+                            <ion-card-subtitle color="primary">{{movieQuestions[8]}}</ion-card-subtitle>
                           </ion-card-header>
                         
                           <ion-card-content>
@@ -361,7 +357,7 @@
                   <ion-slide>
                       <ion-card>
                           <ion-card-header>
-                              <ion-card-subtitle>{{movieQuestions[9]}}</ion-card-subtitle>
+                              <ion-card-subtitle color="primary">{{movieQuestions[9]}}</ion-card-subtitle>
                             </ion-card-header>
                           
                             <ion-card-content>
@@ -396,9 +392,12 @@
                         <!-- <button ion-button color="primary" (click)="checkScore()">Check Score!</button> -->
                     </ion-slide>
                     <ion-slide>
-                      <button ion-button color="primary" (click)="toResults()">Check Score!</button>
-                      <br>
-                      {{score}}
+
+                        <ion-button color="light" size="large" expand="full" (click)="toResults()">Check Score</ion-button>
+                                <br> 
+                                <ion-button color="light" size="large" expand="full" (click)="restart()">Restart</ion-button>
+                                
+                                <!-- <ion-button color="primary" (click)="reset()">Reset!</ion-button> --> 
         </ion-slide>
     </ion-slides>
    

@@ -20,7 +20,8 @@ export class HistoryPage implements OnInit {
 
   //score results to be calculated
   score : number = 0;
-
+  alert;
+  percentage;
   hasAnswered: boolean = false;  
 
   radioBtn0;
@@ -68,13 +69,6 @@ wrongAnswer2(){
   }
 }
 
-
-toResults(){
-
-  this.router.navigateByUrl('tabs/results');
-   
-}
-
 restart() {
   this.score = 0;
   this.slides.lockSwipes(false);
@@ -87,9 +81,18 @@ reset() {
   this.router.navigateByUrl('home');
 }
 
-EndSlide() {
-  console.log("passed to results");
-  this.router.navigate(['tabs/results'], { queryParams:{score: this.score}});
+toResults() {
+
+  this.percentage = (this.score/10)*100;
+
+  this.router.navigate(['tabs/results'], { queryParams:{score: this.score, alert: this.alert, percentage: this.percentage}});
+
+  if(this.score >= 5){
+    alert("passed: " + " " + (this.score/10*100) +"%"  );
+  }
+  else{
+    alert("failed: "  + " " + (this.score/10*100) +"%" + " try again!")
+  }
 }
 
 }

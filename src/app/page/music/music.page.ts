@@ -18,6 +18,8 @@ export class MusicPage implements OnInit {
 
   //score results to be calculated
   score : number = 0;
+  alert;
+  percentage;
 
   hasAnswered: boolean = false; 
 
@@ -66,11 +68,16 @@ wrongAnswer2(){
 }
 
 
-toResults(){
+toResults() {
+  this.percentage = (this.score/10)*100;
 
-  this.router.navigateByUrl('tabs/results');
-  // this.score = 0;
-  // this.router.navigateByUrl('tabs/results');
- 
+  this.router.navigate(['tabs/results'], { queryParams:{score: this.score, alert: this.alert, percentage: this.percentage}});
+
+  if(this.score >= 5){
+    alert("passed: " + " " + (this.score/10*100) +"%"  );
+  }
+  else{
+    alert("failed: "  + " " + (this.score/10*100) +"%" + " try again!")
+  }
 }
 }

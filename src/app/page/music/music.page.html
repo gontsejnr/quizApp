@@ -18,7 +18,7 @@
       <ion-slide>
           <ion-card>
               <ion-card-header>
-                <ion-card-subtitle>{{musicQuestions[0]}}</ion-card-subtitle>
+                <ion-card-subtitle color="primary">{{musicQuestions[0]}}</ion-card-subtitle>
               </ion-card-header>
             
               <ion-card-content>
@@ -57,7 +57,7 @@
       <ion-slide>
           <ion-card>
               <ion-card-header>
-                  <ion-card-subtitle>{{musicQuestions[1]}}</ion-card-subtitle>
+                  <ion-card-subtitle color="primary">{{musicQuestions[1]}}</ion-card-subtitle>
                 </ion-card-header>
               
                 <ion-card-content>
@@ -96,7 +96,7 @@
       <ion-slide>
       <ion-card>
           <ion-card-header>
-              <ion-card-subtitle>{{musicQuestions[2]}}</ion-card-subtitle>
+              <ion-card-subtitle color="primary">{{musicQuestions[2]}}</ion-card-subtitle>
             </ion-card-header>
           
             <ion-card-content>
@@ -133,7 +133,7 @@
       <ion-slide>
           <ion-card>
               <ion-card-header>
-                  <ion-card-subtitle>{{musicQuestions[3]}}</ion-card-subtitle>
+                  <ion-card-subtitle color="primary">{{musicQuestions[3]}}</ion-card-subtitle>
                 </ion-card-header>
               
                 <ion-card-content>
@@ -172,7 +172,7 @@
         <ion-slide>
             <ion-card>
                 <ion-card-header>
-                    <ion-card-subtitle>{{musicQuestions[4]}}</ion-card-subtitle>
+                    <ion-card-subtitle color="primary">{{musicQuestions[4]}}</ion-card-subtitle>
                   </ion-card-header>
                 
                   <ion-card-content>
@@ -210,7 +210,7 @@
           <ion-slide>
               <ion-card>
                   <ion-card-header>
-                      <ion-card-subtitle>{{musicQuestions[5]}}</ion-card-subtitle>
+                      <ion-card-subtitle color="primary">{{musicQuestions[5]}}</ion-card-subtitle>
                     </ion-card-header>
                   
                     <ion-card-content>
@@ -247,7 +247,7 @@
             <ion-slide>
                 <ion-card>
                     <ion-card-header>
-                        <ion-card-subtitle>{{musicQuestions[6]}}</ion-card-subtitle>
+                        <ion-card-subtitle color="primary">{{musicQuestions[6]}}</ion-card-subtitle>
                       </ion-card-header>
                     
                       <ion-card-content>
@@ -284,7 +284,7 @@
               <ion-slide>
                   <ion-card>
                       <ion-card-header>
-                          <ion-card-subtitle>{{musicQuestions[7]}}</ion-card-subtitle>
+                          <ion-card-subtitle color="primary">{{musicQuestions[7]}}</ion-card-subtitle>
                         </ion-card-header>
                       
                         <ion-card-content>
@@ -322,7 +322,7 @@
                 <ion-slide>
                     <ion-card>
                         <ion-card-header>
-                            <ion-card-subtitle>{{musicQuestions[8]}}</ion-card-subtitle>
+                            <ion-card-subtitle color="primary">{{musicQuestions[8]}}</ion-card-subtitle>
                           </ion-card-header>
                         
                           <ion-card-content>
@@ -360,7 +360,7 @@
                   <ion-slide>
                       <ion-card>
                           <ion-card-header>
-                              <ion-card-subtitle>{{musicQuestions[9]}}</ion-card-subtitle>
+                              <ion-card-subtitle color="primary">{{musicQuestions[9]}}</ion-card-subtitle>
                             </ion-card-header>
                           
                             <ion-card-content>
@@ -395,9 +395,13 @@
                  
                     </ion-slide>
                     <ion-slide>
-                      <button ion-button color="primary" (click)="toResults()">Check Score!</button>
-                      <br>
-                      {{score}}
+
+                        <ion-button color="light" size="large" expand="full" (click)="toResults()">Check Score</ion-button>
+                        <br> 
+                        <ion-button color="light" size="large" expand="full" (click)="restart()">Restart</ion-button>
+                        
+                        <!-- <ion-button color="primary" (click)="reset()">Reset!</ion-button> -->
+        
         </ion-slide>
     </ion-slides>
     

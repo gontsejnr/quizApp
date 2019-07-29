@@ -8,9 +8,6 @@
 
         <ion-card>
           <img src="https://images.pexels.com/photos/36006/renaissance-schallaburg-figures-facade.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-          <ion-card-header>
-          
-          </ion-card-header>
         </ion-card>
   
   <ion-slides #slides>
@@ -18,12 +15,10 @@
     <ion-slide>
         <ion-card>
             <ion-card-header>
-              <ion-card-subtitle>{{historyQuestions[0]}}</ion-card-subtitle>
+              <ion-card-subtitle color="primary">{{historyQuestions[0]}}</ion-card-subtitle>
             </ion-card-header>
           
             <ion-card-content>
-              
-
               <ion-list>
                 <ion-radio-group [(ngModel)]="radioBtn0" >
               
@@ -57,12 +52,10 @@
     <ion-slide>
         <ion-card>
             <ion-card-header>
-                <ion-card-subtitle>{{historyQuestions[1]}}</ion-card-subtitle>
+                <ion-card-subtitle color="primary">{{historyQuestions[1]}}</ion-card-subtitle>
               </ion-card-header>
             
               <ion-card-content>
-                
-  
                 <ion-list>
                   <ion-radio-group [(ngModel)]="radioBtn1" >
                 
@@ -90,18 +83,15 @@
                 </ion-list>
               </ion-card-content>
           </ion-card>
-          
     </ion-slide>
 
     <ion-slide>
     <ion-card>
         <ion-card-header>
-            <ion-card-subtitle>{{historyQuestions[2]}}</ion-card-subtitle>
+            <ion-card-subtitle color="primary">{{historyQuestions[2]}}</ion-card-subtitle>
           </ion-card-header>
         
           <ion-card-content>
-            
-
             <ion-list>
               <ion-radio-group [(ngModel)]="radioBtn2" >
             
@@ -135,12 +125,10 @@
     <ion-slide>
         <ion-card>
             <ion-card-header>
-                <ion-card-subtitle>{{historyQuestions[3]}}</ion-card-subtitle>
+                <ion-card-subtitle color="primary">{{historyQuestions[3]}}</ion-card-subtitle>
               </ion-card-header>
             
               <ion-card-content>
-                
-  
                 <ion-list>
                   <ion-radio-group [(ngModel)]="radioBtn3" >
                 
@@ -174,7 +162,7 @@
       <ion-slide>
           <ion-card>
               <ion-card-header>
-                  <ion-card-subtitle>{{historyQuestions[4]}}</ion-card-subtitle>
+                  <ion-card-subtitle color="primary">{{historyQuestions[4]}}</ion-card-subtitle>
                 </ion-card-header>
               
                 <ion-card-content>
@@ -212,7 +200,7 @@
         <ion-slide>
             <ion-card>
                 <ion-card-header>
-                    <ion-card-subtitle>{{historyQuestions[5]}}</ion-card-subtitle>
+                    <ion-card-subtitle color="primary">{{historyQuestions[5]}}</ion-card-subtitle>
                   </ion-card-header>
                 
                   <ion-card-content>
@@ -249,7 +237,7 @@
           <ion-slide>
               <ion-card>
                   <ion-card-header>
-                      <ion-card-subtitle>{{historyQuestions[6]}}</ion-card-subtitle>
+                      <ion-card-subtitle color="primary">{{historyQuestions[6]}}</ion-card-subtitle>
                     </ion-card-header>
                   
                     <ion-card-content>
@@ -288,7 +276,7 @@
             <ion-slide>
                 <ion-card>
                     <ion-card-header>
-                        <ion-card-subtitle>{{historyQuestions[7]}}</ion-card-subtitle>
+                        <ion-card-subtitle color="primary">{{historyQuestions[7]}}</ion-card-subtitle>
                       </ion-card-header>
                     
                       <ion-card-content>
@@ -326,7 +314,7 @@
               <ion-slide>
                   <ion-card>
                       <ion-card-header>
-                          <ion-card-subtitle>{{historyQuestions[8]}}</ion-card-subtitle>
+                          <ion-card-subtitle color="primary">{{historyQuestions[8]}}</ion-card-subtitle>
                         </ion-card-header>
                       
                         <ion-card-content>
@@ -364,7 +352,7 @@
                 <ion-slide>
                     <ion-card>
                         <ion-card-header>
-                            <ion-card-subtitle>{{historyQuestions[9]}}</ion-card-subtitle>
+                            <ion-card-subtitle color="primary">{{historyQuestions[9]}}</ion-card-subtitle>
                           </ion-card-header>
                         
                           <ion-card-content>
@@ -399,14 +387,13 @@
             
                   </ion-slide>
                   <ion-slide>
-                                <ion-button color="primary" (click)="toResults()">Check Score!</ion-button>
+                     
+                                <ion-button color="light" size="large" expand="full" (click)="toResults()">Check Score</ion-button>
                                 <br> 
-                                <ion-button color="primary" (click)="restart()">Restart!</ion-button>
-                                <br>
-                                <ion-button color="primary" (click)="reset()">Reset!</ion-button>
-                                <br><br>
-
-                                {{score}}
+                                <ion-button color="light" size="large" expand="full" (click)="restart()">Restart</ion-button>
+                                
+                                <!-- <ion-button color="primary" (click)="reset()">Reset!</ion-button> --> 
+                        
                   </ion-slide>
 
   </ion-slides>
