@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-results',
@@ -12,7 +12,7 @@ export class ResultsPage implements OnInit {
   @Input() alert;
   @Input() percentage;
 
-  constructor(private router: ActivatedRoute) { }
+  constructor(private router: ActivatedRoute, private route: Router) { }
 
   ngOnInit() {
 
@@ -31,5 +31,11 @@ export class ResultsPage implements OnInit {
   //   console.log('Failed');
   //   this.passed = "Failed";
   }
+
+  nav(){
+    this.route.navigateByUrl('home');
+
+  }
+
   
   }

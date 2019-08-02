@@ -94,16 +94,16 @@
           <ion-card-content>
             <ion-list>
               <ion-radio-group [(ngModel)]="radioBtn2" >
-            
-                <ion-item>
-                  <ion-label>{{historyAnswers[2]}}</ion-label>
-                  <ion-radio slot="start" (click)="rightAnswer()" value="{{historyAnswers[2]}}" ></ion-radio>
-                </ion-item>
-            
+                        
                 <ion-item>
                   <ion-label>August 21</ion-label>
                   <ion-radio slot="start" (click)="wrongAnswer()" value="August 21" ></ion-radio>
                 </ion-item>
+
+                <ion-item>
+                    <ion-label>{{historyAnswers[2]}}</ion-label>
+                    <ion-radio slot="start" (click)="rightAnswer()" value="{{historyAnswers[2]}}" ></ion-radio>
+                  </ion-item>
             
                 <ion-item>
                   <ion-label>December 26</ion-label>
@@ -132,12 +132,7 @@
                 <ion-list>
                   <ion-radio-group [(ngModel)]="radioBtn3" >
                 
-                    <ion-item>
-                      <ion-label>{{historyAnswers[3]}}</ion-label>
-                      <ion-radio slot="start" (click)="rightAnswer()" value="{{historyAnswers[3]}}" ></ion-radio>
-                    </ion-item>
-                
-                    <ion-item>
+                                        <ion-item>
                       <ion-label>July 1st, 1763</ion-label>
                       <ion-radio slot="start" (click)="wrongAnswer()" value="July 1st, 1763" ></ion-radio>
                     </ion-item>
@@ -146,7 +141,12 @@
                       <ion-label>July 1st, 1832</ion-label>
                       <ion-radio slot="start" (click)="wrongAnswer1()" value="July 1st, 1832"></ion-radio>
                     </ion-item>
-    
+
+                    <ion-item>
+                        <ion-label>{{historyAnswers[3]}}</ion-label>
+                        <ion-radio slot="start" (click)="rightAnswer()" value="{{historyAnswers[3]}}" ></ion-radio>
+                      </ion-item>
+                    
                     <ion-item>
                       <ion-label>July 1st, 1902</ion-label>
                       <ion-radio slot="start" (click)="wrongAnswer2()" value="July 1st, 1902"></ion-radio>
@@ -206,12 +206,7 @@
                   <ion-card-content>
                     <ion-list>
                       <ion-radio-group [(ngModel)]="radioBtn5" >
-                    
-                        <ion-item>
-                          <ion-label>{{historyAnswers[5]}}</ion-label>
-                          <ion-radio slot="start" (click)="rightAnswer()" value="{{historyAnswers[5]}}" ></ion-radio>
-                        </ion-item>
-                    
+                            
                         <ion-item>
                           <ion-label>October 9, 1997</ion-label>
                           <ion-radio slot="start" (click)="wrongAnswer()" value="October 9, 1997" ></ion-radio>
@@ -226,6 +221,11 @@
                           <ion-label>Feburary 7th, 2000</ion-label>
                           <ion-radio slot="start" (click)="wrongAnswer2()" value="Feburary 7th, 2000"></ion-radio>
                         </ion-item>
+
+                        <ion-item>
+                            <ion-label>{{historyAnswers[5]}}</ion-label>
+                            <ion-radio slot="start" (click)="rightAnswer()" value="{{historyAnswers[5]}}" ></ion-radio>
+                          </ion-item>
                         
                       </ion-radio-group>
                     </ion-list>
@@ -245,12 +245,7 @@
         
                       <ion-list>
                         <ion-radio-group [(ngModel)]="radioBtn6" >
-                      
-                          <ion-item>
-                            <ion-label>{{historyAnswers[6]}}</ion-label>
-                            <ion-radio slot="start" (click)="rightAnswer()" value="{{historyAnswers[6]}}" ></ion-radio>
-                          </ion-item>
-                      
+                                           
                           <ion-item>
                             <ion-label>German Democratic Republic</ion-label>
                             <ion-radio slot="start" (click)="wrongAnswer()" value="German Democratic Republic" ></ion-radio>
@@ -260,6 +255,11 @@
                             <ion-label>Federal Republic of Germany</ion-label>
                             <ion-radio slot="start" (click)="wrongAnswer1()" value="Federal Republic of Germany"></ion-radio>
                           </ion-item>
+
+                          <ion-item>
+                              <ion-label>{{historyAnswers[6]}}</ion-label>
+                              <ion-radio slot="start" (click)="rightAnswer()" value="{{historyAnswers[6]}}" ></ion-radio>
+                            </ion-item>
           
                           <ion-item>
                             <ion-label>Oesterreich</ion-label>
