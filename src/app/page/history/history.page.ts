@@ -95,4 +95,8 @@ toResults() {
   }
 }
 
+back(){
+  this.router.navigateByUrl('/home')
+}
+
 }

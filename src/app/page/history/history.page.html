@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar><ion-icon name="arrow-round-back" size="large" (click)="back()"></ion-icon>
     <ion-title>History</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -388,9 +388,9 @@
                   </ion-slide>
                   <ion-slide>
                      
-                                <ion-button color="primary" size="large" expand="full" (click)="toResults()">Check Score</ion-button>
+                                <ion-button color="primary" size="large" shape="round" expand="full" (click)="toResults()">Check Score</ion-button>
                                 <br> 
-                                <ion-button color="primary" size="large" expand="full" (click)="restart()">Restart</ion-button>
+                                <ion-button color="primary" size="large" shape="round" expand="full" (click)="restart()">Restart</ion-button>
                                 
                                 <!-- <ion-button color="primary" (click)="reset()">Reset!</ion-button> --> 
                         

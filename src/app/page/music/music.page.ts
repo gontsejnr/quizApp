@@ -80,4 +80,8 @@ toResults() {
     alert("failed: "  + " " + (this.score/10*100) +"%" + " try again!")
   }
 }
+
+back(){
+  this.router.navigateByUrl('/home')
+}
 }
